@@ -31,15 +31,20 @@ Para rodar a aplicação via docker executar os seguintes comandos na raiz do pr
 ```
 
 ## Banco de dados Postgres
+Criar um volume chamado 'postgresql-volume'
 
+```shell
+ docker volume create postgresql-volume
+``` 
 - [docker-compose.yml ](https://drive.google.com/file/d/1BzVluDULWZUnVFoG67OR6slpyJhv6vAy/view?usp=sharing)
+Executar o arquivo docker-compose.yml
 
+```shell
+docker-compose up
+``` 
 JDBC URL: jdbc:postgresql://localhost:54320/idtrust
 username: postgres
 password: postgres
-
-
-
 
 ## Testando a API com Postman
 
