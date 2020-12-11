@@ -1,0 +1,36 @@
+app:
+  name: idtrust-app
+
+spring:
+  application:
+    name: idtrust-app
+  resources:
+    add-mappings: true
+  datasource:
+    password: postgres
+    platform: postgres
+    url: jdbc:postgresql://localhost:54320/idtrust
+    username: postgres
+    jpa:
+      database: POSTGRESQL
+      generate-ddl: true
+      hibernate:
+        ddl-auto: create
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      properties:
+        hibernate:
+          jdbc:
+            lob:
+              non_contextual_creation: true
+      show-sql: true
+    flyway:
+      user: postgres
+      password: postgres
+      schemas: public
+
+API_KEY: vpvps_Hr5vQacSM82kVs
+#API_KEY: 1y7rgT9GXccy_XysC-gf
+
+CEPEA_API_URL: https://www.quandl.com/api/v3/datasets/CEPEA/
+MOEDAS_API_URL: https://economia.awesomeapi.com.br/json/
+
