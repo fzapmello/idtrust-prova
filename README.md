@@ -43,7 +43,9 @@ Executar o arquivo docker-compose.yml
 docker-compose up
 ``` 
 JDBC URL: jdbc:postgresql://localhost:54320/idtrust
+
 username: postgres
+
 password: postgres
 
 ## Testando a API com Postman
